@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import music from '../../../db.json';
+import music from '../../../../db.json';
+
 @Component({
   selector: 'app-album',
   templateUrl: './album.component.html',

@@ -3,16 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { AlbumComponent } from './album/album.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './component/home/home.component';
+import { AlbumComponent } from './component/album/album.component';
+import { PageNotFoundComponent } from './component/page-not-found/page-not-found.component';
+import { SingerComponent } from './component/singer/singer.component';
+import { MenuSongComponent } from './component/menu-song/menu-song.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AlbumComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SingerComponent,
+    MenuSongComponent
   ],
   imports: [
     BrowserModule,

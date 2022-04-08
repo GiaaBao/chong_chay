@@ -1,0 +1,14 @@
+<div class="popular_artists">
+    <div class="h4">
+        <h4>Popular Artists</h4>
+        <div class="btn_s">
+            <i id="left_scrolls" class="bi bi-arrow-left-short"></i>
+            <i id="right_scrolls" class="bi bi-arrow-right-short"></i>
+        </div>
+    </div>
+    <div class="item">
+        <li *ngFor="let music of music_list">
+            <img [src]="'/assets/img/' + music.img" alt="{{music.name}}" title="{{music.name}}">
+        </li>
+    </div>
+</div>

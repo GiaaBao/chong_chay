@@ -1,0 +1,12 @@
+
+<div class="menu_song">
+    <li class="songItem" *ngFor = "let music of music_list; let i = index">
+        <span>{{ i + 1 }}</span>
+        <img [src]="'/assets/img/' + music.img" alt="{{music.name}}">
+        <h5>
+            {{music.name}}
+            <div class="subtitle">Alan Walker</div>
+        </h5>
+            <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+    </li>
+</div>
