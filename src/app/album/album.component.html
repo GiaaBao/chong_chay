@@ -1,2 +1,21 @@
-<p>album works!</p>
-<h1>helllo</h1>
+<div class="popular_song">
+    <div class="h4">
+        <h4>Album</h4>
+        <div class="btn_s">
+            <i id="left_scroll" class="bi bi-arrow-left-short"></i>
+            <i id="right_scroll" class="bi bi-arrow-right-short"></i>
+        </div>
+    </div>
+    <div  class="pop_song">
+        <li *ngFor="let music of limit" class="songItem">
+            <div class="img_play">
+                <img [src]="'/assets/img/' + music.img" alt="{{music.name}}">
+                <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+            </div>
+            <h5>{{music.name}}
+                <br>
+                <div class="subtitle">{{music.name}}</div>
+            </h5>
+        </li>
+    </div>
+</div>

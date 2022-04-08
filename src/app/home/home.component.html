@@ -8,59 +8,14 @@
                 <h4 ><span></span><i class="bi bi-music-note-beamed"></i> Recommended</h4>
             </div>
             <div class="menu_song">
-                <li class="songItem">
-                    <span>01</span>
-                    <img src="/assets/img/1.jpg" alt="Alan">
+                <li class="songItem" *ngFor = "let music of music_list; let i = index">
+                    <span>{{ i + 1 }}</span>
+                    <img [src]="'/assets/img/' + music.img" alt="{{music.name}}">
                     <h5>
-                        On My Way
+                        {{music.name}}
                         <div class="subtitle">Alan Walker</div>
                     </h5>
                         <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
-                </li>
-                <li class="songItem">
-                    <span>02</span>
-                    <img src="/assets/img/1.jpg" alt="Alan">
-                    <h5>
-                        On My Way
-                        <div class="subtitle">Alan Walker</div>
-                    </h5>
-                        <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
-                </li>
-                <li class="songItem">
-                    <span>03</span>
-                    <img src="/assets/img/1.jpg" alt="Alan">
-                    <h5>
-                        On My Way
-                        <div class="subtitle">Alan Walker</div>
-                    </h5>
-                        <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
-                </li>
-                <li class="songItem">
-                    <span>04</span>
-                    <img src="/assets/img/1.jpg" alt="Alan">
-                    <h5>
-                        On My Way
-                        <div class="subtitle">Alan Walker</div>
-                    </h5>
-                        <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
-                </li>
-                <li class="songItem">
-                    <span>05</span>
-                    <img src="/assets/img/1.jpg" alt="Alan">
-                    <h5>
-                        On My Way
-                        <div class="subtitle">Alan Walker</div>
-                    </h5>
-                        <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
-                </li>
-                <li class="songItem">
-                    <span>06</span>
-                    <img src="/assets/img/1.jpg" alt="Alan">
-                    <h5>
-                        On My Way
-                        <div class="subtitle">Alan Walker</div>
-                    </h5>
-                        <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
                 </li>
             </div>
         </div>
@@ -93,108 +48,7 @@
                     <button>FOLLOW</button>
                 </div>
             </div>
-            <div class="popular_song">
-                <div class="h4">
-                    <h4>Popular Song</h4>
-                    <div class="btn_s">
-                        <i id="left_scroll" class="bi bi-arrow-left-short"></i>
-                        <i id="right_scroll" class="bi bi-arrow-right-short"></i>
-                    </div>
-                </div>
-                <div class="pop_song">
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="/assets/img/1.jpg" alt="alan">
-                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
-                        </div>
-                        <h5>On My Way
-                            <br>
-                            <div class="subtitle">Alan Walker</div>
-                        </h5>
-                    </li>
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="/assets/img/1.jpg" alt="alan">
-                            <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
-                            <!-- change All id  -->
-                        </div>
-                        <h5>On My Way
-                            <br>
-                            <div class="subtitle">Alan Walker</div>
-                        </h5>
-                    </li>
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="/assets/img/1.jpg" alt="alan">
-                            <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
-                        </div>
-                        <h5>On My Way
-                            <br>
-                            <div class="subtitle">Alan Walker</div>
-                        </h5>
-                    </li>
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="/assets/img/1.jpg" alt="alan">
-                            <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
-                        </div>
-                        <h5>On My Way
-                            <br>
-                            <div class="subtitle">Alan Walker</div>
-                        </h5>
-                    </li>
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="/assets/img/1.jpg" alt="alan">
-                            <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
-                        </div>
-                        <h5>On My Way
-                            <br>
-                            <div class="subtitle">Alan Walker</div>
-                        </h5>
-                    </li>
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="/assets/img/1.jpg" alt="alan">
-                            <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
-                        </div>
-                        <h5>On My Way
-                            <br>
-                            <div class="subtitle">Alan Walker</div>
-                        </h5>
-                    </li>
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="/assets/img/1.jpg" alt="alan">
-                            <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
-                        </div>
-                        <h5>On My Way
-                            <br>
-                            <div class="subtitle">Alan Walker</div>
-                        </h5>
-                    </li>
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="/assets/img/1.jpg" alt="alan">
-                            <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
-                        </div>
-                        <h5>On My Way
-                            <br>
-                            <div class="subtitle">Alan Walker</div>
-                        </h5>
-                    </li>
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="/assets/img/1.jpg" alt="alan">
-                            <i class="bi playListPlay bi-play-circle-fill" id="15"></i>
-                        </div>
-                        <h5>On My Way
-                            <br>
-                            <div class="subtitle">Alan Walker</div>
-                        </h5>
-                    </li>
-                </div>
-            </div>
+            <app-album></app-album>
             <div class="popular_artists">
                 <div class="h4">
                     <h4>Popular Artists</h4>
@@ -204,40 +58,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <li>
-                        <img src="/assets/img/arjit.jpg" alt="Arjit Singh" title="Arjit Singh">
+                    <li *ngFor="let music of limit">
+                        <img [src]="'/assets/img/' + music.img" alt="{{music.name}}" title="{{music.name}}">
                     </li>
-                    <li>
-                        <img src="/assets/img/alan.jpg" alt="Alan Walker" title="Alan Walker">
-                    </li>
-                    <li>
-                        <img src="/assets/img/atif.jpg" alt="Atif Aslam" title="Atif Aslam">
-                    </li>
-                    <li>
-                        <img src="/assets/img/guru.jpg" alt="Guru RAndawa" title="Guru Randawa">
-                    </li>
-                    <li>
-                        <img src="/assets/img/dhvani.jpg" alt="Dhvani" title="Dhvani">
-                    </li>
-                    <li>
-                        <img src="/assets/img/Diljit_Dosanjh.jpg" alt="Diljit Dosanjh" title="Diljit Dosanjh">
-                    </li>
-                    <li>
-                        <img src="/assets/img/jubin Nautiyal.jpg" alt="Jubin Nautiyal" title="Jubin Nautiyal">
-                    </li>
-                    <li>
-                        <img src="/assets/img/neha.jpg" alt="Neha Kakker" title="Neha Kakker">
-                    </li>
-                    <li>
-                        <img src="/assets/img/justin-bieber-lede.jpg" alt="Justin Bieber" title="Justin Bieber">
-                    </li>
-                    <li>
-                        <img src="/assets/img/honey.jpg" alt="Honey Singh" title="Honey Singh">
-                    </li>
-                    <li>
-                        <img src="/assets/img/akhil.jpg" alt="Akhil" title="Akhil">
-                    </li>
-                    <!-- change all img  -->
                 </div>
             </div>
         </div>
