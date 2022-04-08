@@ -1,3 +1,4 @@
+// chuẩn bị dữ liệu phát nhạc
 var fs = require('fs');
 var files = fs.readdirSync('./src/audio');
 var images = fs.readdirSync('./src/img');
