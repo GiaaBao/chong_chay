@@ -1,8 +1,7 @@
 var fs = require('fs');
-var files = fs.readdirSync('./src/audio');
-var images = fs.readdirSync('./src/img');
-var path = require('path');
+var files = fs.readdirSync('./src/assets/audio');
 var json = [];
+
 function generate(){
     files.forEach(function(i){
         var name=i.split('.')[0];
@@ -12,8 +11,8 @@ function generate(){
             img:name+'.jpg'
         });
     })
-    if(!fs.existsSync('db.json')){
-        fs.appendFile('db.json',JSON.stringify(json),function(err){
+    if(!fs.existsSync('./src/assets/db.json')){
+        fs.appendFile('./src/assets/db.json',JSON.stringify(json),function(err){
             if(err)
                 console.log(err)
         })
